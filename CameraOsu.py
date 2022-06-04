@@ -24,7 +24,7 @@ cap.set(4, 720)
 detector = HandDetector(detectionCon=0.7)
 
 # initialize fps clock 
-fps = 60  # 帧数
+fps = 30  # 帧数
 clock = pygame.time.Clock()
 
 # main
