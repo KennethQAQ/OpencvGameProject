@@ -76,3 +76,4 @@ while start:
     key = cv2.waitKey(1)
     if key == ord('x'):
         start = False
+
