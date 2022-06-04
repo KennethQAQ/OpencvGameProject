@@ -24,7 +24,7 @@ cap.set(4, 720)
 detector = HandDetector(detectionCon=0.7)
 
 # initialize fps clock 
-fps = 10    #速度参数
+fps = 60  # 帧数
 clock = pygame.time.Clock()
 
 # main
@@ -60,20 +60,19 @@ while start:
     window.blit(frame, (0, 0))
 
     # block logic
-    
+
     firstItem.draw_item()
     firstItem.Ring2Circle()
     firstItem.showscore()
     firstItem.getscore()
 
-    #update display
+    # update display
     pygame.display.update()
 
     # set fps
     clock.tick(fps)
 
-    #结束游戏
+    # 结束游戏
     key = cv2.waitKey(1)
     if key == ord('x'):
         start = False
-
