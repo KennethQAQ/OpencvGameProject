@@ -32,7 +32,7 @@ firstItem = Item(window)
 
 start = True
 while start:
-    # get events
+    # 获取事件
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             start = False
